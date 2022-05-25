@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Title-->
+  <title >  FIND HOTELS </title>
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="card.css">
+  <link rel="icon" type="image/jpg" href="logo_xhas.jpg">
+  
+  <script src="card.js"></script>
+</head>
+  <div  class="search">
+    <table >
+      <tr>
+        <th  class="search__title">RO<span class="orange">TE</span><span class="red">LS</span> <h1 class="logo"> </h1></th>  
+        <th class="search__description">Try searching for a hotel in a specific city, or more much ! </th>
+      </tr>
+    </table>
+  </div>
+  <!-- Book Hotel Button -->
+  <input id="hotel" type="checkbox" />
+  <label for="hotel">Hotel
+  <svg 
+       xmlns="http://www.w3.org/2000/svg" 
+       viewbox="0 0 10 10">
+       <path 
+       d="M7.25 4.5c0-.7-1-.7-1 0s1 .7 1 
+         0zm-1.75 0c0-.7-1-.7-1 0s1 .7 1 
+         0zm-1.75 0c0-.7-1-.7-1 0s1 .7 1 
+           0zm3.5-2c0-.7-1-.7-1 0s1 .7 1 
+         0zm-1.75 0c0-.7-1-.7-1 0s1 .7 1 
+       0zM2 9V1h6v8m1.25 
+       0H1m2.75-6.5c0-.7-1-.7-1 0s1 .7 1 
+          0zM6.25 9V7.5h-2.5V9M5 9V7.5"/>
+    </svg>
+  </label>
+  
+ 
+  <p class="notify"></p> <br>
+  <h6>Going</h6>
+  <div class="counter select"> 
+   <h4><select id="to"></h4>
+      <option value="costantine" >
+        Constantine	</option>
+      <option value="Adrar" >
+        Adrar</option>
+      <option value="Béjaïa" >
+        Béjaïa</option>
+      <option value="Béchar " >
+        Béchar </option>
+      <option value="Tlemcen" >
+        Tlemcen</option>
+    <option value="Tizi Ouzou" >
+      Tizi Ouzou</option>
+      <option value="Alger" >
+        Alger </option>
+    <option value="Jijel" >
+      Jijel</option>
+      <option value="Sétif" >
+        Sétif</option>
+      <option value="	Wilaya de Sidi Bel Abbès" >
+        Sidi Bel Abbès</option>
+      <option value="BATNA" selected>
+      BATNA</option>
+      <option value="Annaba" >
+        Annaba</option>
+      <option value="Oran" >
+        Oran</option>
+      <option value="Djanet " >
+        Djanet </option>
+   </select>
+    <label> To: </label>
+  </div>
+  
+  <!-- First Name Field -->
+  
+  <input id="first-name" type="text" autocomplete="given-name" required />
+  <label for="first-name">First Name</label>
+  <span></span>
+  
+  <br>
+  
+  <input id="last-name" type="text" autocomplete="family-name" required>
+  <label for="last-name">Last Name</label>
+  <span></span>
+  
+  
+  <br>
+  
+  
+  <br>
+  
+  
+  <div class="counter date">
+    <input id="date" type="date" autocomplete="todays-date" required>
+    <label for="date">Date</label>
+    <span></span>
+  </div>
+  
+  
+  <div class="counter quantity-container">
+  
+    <input id="people" type="number" max="99" min="0" step="1" class="quantity-amount" name="" value="1" maxlength="2" />
+    <label for="people">People</label>
+    <button class="gdown decrease" type="button">-</button>
+    <button class="gup increase" type="button ">+</button>
+  
+    <span></span>
+  </div>
+  
+  
+  <div class="counter quantity-container">
+  
+    <input id="days" type="number" class="quantity-amount" name="" value="5" min="0" max="365" step="1" />
+    <label for="days">Days</label>
+    <button class="gdown decrease" type="button">-</button>
+    <button class="gup increase" type="button">+</button>
+  
+    <span></span>
+  </div>
+  
+  
+  <input type="submit" value="Search" />
+ 
+  </body>
+  </html>
